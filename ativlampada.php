@@ -9,8 +9,8 @@
 </head>
 <body>
 <img src="imagens/lampadaAcesa.jfif" alt="lampada desligada">
-
-<form action="ativlampada.php">
+<img src="<?" alt="">
+<form method="post">
 
         <button type="submit" name ="ligar">LIGAR</button>
         <button type="submit" name = "desligar">DESLIGAR</button>

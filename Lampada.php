@@ -3,11 +3,15 @@
 class  Lampada  {
 
    private $estado;
-   private $potencia = 0;
+   private $potencia;
+   private $imgLigada;
+   private $imgDesliga;
   
-   function __construct($estado = false,$potencia =0){
-       $this->estado  = $estado;
-       $this->setPotencia($potencia);
+   function __construct($imgDesliga, $imgLigada){
+       $this->estado  = false;
+       $this->setPotencia($potencia);//aqui
+       $this->imgDesliga = $desligada;
+       $this->imgLigada = $ligada;
    }
 
    function setPotencia($potencia){
@@ -25,6 +29,14 @@ class  Lampada  {
 
    function getEstado(){
        return $this->estado;
+   }
+
+   function getImagem(){
+       if($this->estado){
+           return $this->imgLigada;
+       }else{
+           return $this->imgDesliga;
+       }
    }
 
    function liga(){
